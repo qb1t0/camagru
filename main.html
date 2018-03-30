@@ -1,7 +1,42 @@
  <html>
  <head>
  	<title>Camagru</title>
+ 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
+  	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+ 	<link rel="stylesheet" href="css/camera.css">
  </head>
  <body>
+ 	<div class="head">
+ 		<div class="menu">
+  			<ul class="list hidden">
+    			<li>Save</li>
+    			<li>Export to GitHub</li>
+    			<li>Delete</li>
+    			<li>Share</li>
+  			</ul>
+		</div>
+		<!-- Script for MENU  -->
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+		<script  src="js/menu.js"></script>
+ 		<a>Camagru</a>
+ 	</div>
+ 	<div class="container">
+ 		<p>Generate your own meme</p>
+ 		<div class="content">
+<!--
+	Ideally these elements aren't created until it's confirmed that the 
+	client supports video/camera, but for the sake of illustrating the 
+	elements involved, they are created with markup (not JavaScript)
+-->
+<video id="video" width="640" height="480" autoplay></video>Ь
+<button id="snap">Snap Photo</button>
+<canvas id="canvas" width="640" height="480"></canvas>
+ 		</div>
+ 		 			<!-- Script for Camera -->
+ 		<script  src="js/cam.js"></script>
+ 		<p>'cause its very simple</p>
+ 	</div>
+<footer>2017, (c)ysalata</footer>
  </body>
- </html>
+
+ </html> 
